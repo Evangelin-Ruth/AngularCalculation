@@ -32,8 +32,8 @@ Validate the HTML code.
 Publish the website in the given URL.
 
 ## PROGRAM :
-```
-index.html:
+
+### index.html:
 <!doctype html>
 <html lang="en">
 <head>
@@ -47,7 +47,8 @@ index.html:
  <app-root></app-root>
 </body>
 </html>
-parallel.component.ts:
+
+### parallel.component.ts:
 import { Component } from '@angular/core';
 @Component({
  selector: 'Parallelogram-Area',
@@ -66,7 +67,8 @@ export class ParallelogramComponent {
  this.area = this.breadth*this.height;
  }
 }
-parallel.component.html:
+
+### parallel.component.html:
 <div>
  Base:<input type="text" [(ngModel)]= "breadth">Meters<br/>
  <br/>
@@ -77,7 +79,8 @@ Area"><br/>
  <br/>
  Area:<input type="text" readonly value="0" [value]= "area">Meter<sup>2</sup>
 </div>
-cuboid.component.ts:
+
+### cuboid.component.ts:
 import { Component } from '@angular/core';
 @Component({
  selector: 'Cuboid-Volume',
@@ -98,7 +101,8 @@ export class CuboidComponent{
  this.volume = this.clength*this.cbreadth*this.cheight;
  }
 }
-cuboid.component.html:
+
+### cuboid.component.html:
 <div>
  Length:<input type="text" [(ngModel)]= "clength">Meters<br/>
  <br/>
@@ -112,7 +116,8 @@ Volume"><br/>
  Volume:<input type="text" readonly value="0" [value]=
 "volume">Meter<sup>3</sup>
 </div>
-app.component.html:
+
+### app.component.html:
 <style>
  *{
 box-sizing: border-box;
@@ -191,7 +196,8 @@ font-size: large;
  </div>
 </body>
 
-```
+
+
 ## OUTPUT:
 ![math cal](https://user-images.githubusercontent.com/94219798/154797401-7c4c9360-8ecf-4deb-acd8-a75e4603b525.JPG)
 
