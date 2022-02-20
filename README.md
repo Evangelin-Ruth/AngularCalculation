@@ -34,6 +34,7 @@ Publish the website in the given URL.
 ## PROGRAM :
 
 ### index.html:
+```
 <!doctype html>
 <html lang="en">
 <head>
@@ -47,8 +48,10 @@ Publish the website in the given URL.
  <app-root></app-root>
 </body>
 </html>
+```
 
 ### parallel.component.ts:
+```
 import { Component } from '@angular/core';
 @Component({
  selector: 'Parallelogram-Area',
@@ -67,8 +70,10 @@ export class ParallelogramComponent {
  this.area = this.breadth*this.height;
  }
 }
+```
 
 ### parallel.component.html:
+```
 <div>
  Base:<input type="text" [(ngModel)]= "breadth">Meters<br/>
  <br/>
@@ -79,8 +84,10 @@ Area"><br/>
  <br/>
  Area:<input type="text" readonly value="0" [value]= "area">Meter<sup>2</sup>
 </div>
+```
 
 ### cuboid.component.ts:
+```
 import { Component } from '@angular/core';
 @Component({
  selector: 'Cuboid-Volume',
@@ -101,8 +108,10 @@ export class CuboidComponent{
  this.volume = this.clength*this.cbreadth*this.cheight;
  }
 }
+```
 
 ### cuboid.component.html:
+```
 <div>
  Length:<input type="text" [(ngModel)]= "clength">Meters<br/>
  <br/>
@@ -116,8 +125,10 @@ Volume"><br/>
  Volume:<input type="text" readonly value="0" [value]=
 "volume">Meter<sup>3</sup>
 </div>
+```
 
 ### app.component.html:
+```
 <style>
  *{
 box-sizing: border-box;
@@ -195,7 +206,7 @@ font-size: large;
  </div>
  </div>
 </body>
-
+```
 
 
 ## OUTPUT:
